@@ -1,0 +1,68 @@
+/** 个性化css */
+body,html{
+	height: 100%;
+	background: #e6e6e6;
+}
+
+.layui-admin-login-wrapper{
+	/*
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 110px 0;
+	min-height: 100%;
+	box-sizing: border-box;
+	display: block!important;
+	*/
+	background: url(../../image/bg_login.jpg) no-repeat;
+    height: 100%;
+} 
+
+.layui-admin-login-container{
+	width: 400px;
+	height: 406px;
+	box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -203px;
+    background: rgba(255,255,255,0.9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80ffffff,endColorstr=#80ffffff); /* 解决ie8透明度不生效 */
+}
+/* .layui-admin-login-container:hover{
+	box-shadow: 0 1px 6px rgba(0,0,0,.2);
+} */
+.login-header-box{
+	padding: 20px;
+	text-align: center;
+}
+.login-header-box p{
+	font-weight: 300;
+	color: #777;
+	margin-top: 20px;
+    font-size: 24px;
+}
+
+.login-content-box{
+	padding: 20px;
+}
+.login-content-box .layui-form-item{
+	position: relative;
+	margin-bottom: 30px;
+}
+.login-content-box .layui-form-item:last-child{
+	margin-bottom: 1px;
+}
+.login-content-box label.user-login-icon{
+	position: absolute;
+	left: 1px;
+	top: -1px;
+	width: 38px;
+	line-height: 40px;
+	text-align: center;
+	color: #d2d2d2;
+}
+.login-content-box input{
+	padding-left: 40px;
+}

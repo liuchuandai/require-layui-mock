@@ -1,0 +1,35 @@
+/** 个性化css */
+body,html{
+	height: 100%;
+}
+.lay-tips{
+	width: 500px;
+    height: 450px;
+    text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/* transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%); */
+    margin-top: -217px;
+    margin-left: -250px;
+    
+}
+.lay-tips .layui-text{
+    width: 500px; 
+   	margin: 30px auto;
+   	border-top: 5px solid #009688;
+   	padding-top: 20px;
+   	font-size: 20px;
+}
+.lay-tips a{
+	color: #faa273;
+	cursor: pointer;
+}
+.lay-tips a:hover{
+	text-decoration: underline;
+	color: #ff5722;
+}
