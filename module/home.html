@@ -6,15 +6,29 @@
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
 <body>
-<style>
 
-</style>
-<!--轮播图-->
-<div class="layui-carousel" lay-filter="test1" id="test1">
-    <div id="lbid" carousel-item>
+<div class="layui-row">
+    <div class="layui-col-md10 layui-col-md-offset1">
+        <!--轮播图-->
+        <div class="layui-carousel" lay-filter="test1" id="test1">
+            <div id="lbid" carousel-item>
+            </div>
+        </div>
+        <!--内容快-->
+        <div style="margin-top: 20px">
+        <div class="layui-col-md4">
+            <img src="../images/xiaomi1.jpg" width="375" height="202px" alt="">
+        </div>
+        <div class="layui-col-md4">
+            <img src="../images/xiaomi2.jpg" width="375" height="202px" alt="">
+        </div>
+        <div class="layui-col-md4">
+            <img src="../images/xiaomi3.jpg" width="379" height="202px" alt="">
+        </div>
+        </div>
+        <button id="next" class="layui-btn layui-btn-fluid" style="margin-top: 20px">流体按钮（最大化适应）</button>
     </div>
 </div>
-
 
 </body>
 <script src="../require.js"></script>

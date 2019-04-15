@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+</head>
+<style>
+</style>
+<body>
+
+<div class="layui-row">
+    <div class="layui-col-md10 layui-col-md-offset1">
+        <table id="demo" lay-filter="test"></table>
+    </div>
+</div>
+</body>
+
+<script type="text/html" id="switchTpl">
+    {{#  if(d.switch == 0){ }}
+    <input type="checkbox" value="{{d.id}}" name="0" lay-skin="switch" lay-text="ON|OFF" lay-filter="sexDemo">
+    {{#  } else { }}
+    <input type="checkbox" value="{{d.id}}" name="1" lay-skin="switch" lay-text="ON|OFF" checked lay-filter="sexDemo">
+    {{#  } }}
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+<script src="../require.js"></script>
+<script src="../js/table.js"></script>
+</html>

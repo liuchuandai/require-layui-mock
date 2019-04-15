@@ -2,23 +2,14 @@
  * Created by admin on 2019/4/10.
  */
 require(["../lib/main"], function () {
-    require(["mock", "layui"], function (Mock) {
-        //设置mock数据与路径
-        Mock.mock('http://getJSON', 'post', {
-            success: true,
-            message: '',
-            data: {
-                "txt": "lcd",
-                "password": "123456"
-            }
-        });
-        layui.use(['form', 'jquery'], function (form, jquery) {
+    require(["layui", "mock_login"], function (x, xx) {
+        layui.use(['form'], function (form) {
             var $ = layui.jquery;
             var form = layui.form;
             //监听提交
             form.on('submit(formDemo)', function (data) {
                 $.ajax({
-                    url: 'http://getJSON',
+                    url: 'http://login',
                     data: data.field,
                     type: 'post',
                     dataType: 'json',
@@ -34,5 +25,4 @@ require(["../lib/main"], function () {
             });
         });
     });
-});
-
+})

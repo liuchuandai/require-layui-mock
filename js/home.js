@@ -6,7 +6,6 @@
  */
 require(["../lib/main"], function () {
     require(["mock", "layui"], function (Mock) {
-
         Mock.mock('http://getIMG', 'get', {
             success: true,
             message: '',
@@ -62,7 +61,13 @@ require(["../lib/main"], function () {
                     })
                 }
             })
+        });
+
+    //    button
+        $("#next").click(function () {
+            window.location.href = "table.html";
         })
     })
-})
+});
+
 
